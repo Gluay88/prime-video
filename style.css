@@ -31,8 +31,9 @@ body {
   border: none;
   border-radius: 1rem;
   flex-grow: 0;
+  flex-shrink: 0;
   background-color: rgba(0, 0, 0, 0.3);
-  z-index: 20;
+  z-index: 10;
   margin: 0.25rem 0;
   padding: 0 .5rem;
   cursor: pointer;
