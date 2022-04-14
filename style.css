@@ -17,7 +17,11 @@ body {
   padding: 3rem 0;
   margin: 0 auto;
   width: 100%;
-  text-align: center;
+  text-align: center; 
+}
+.banner img {
+  max-width: 100%;
+  height: auto;
 }
 .container {
   display: flex;
