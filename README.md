@@ -3,3 +3,4 @@
 - doc - doctype
 - index.html
 - style.css
+- Banner added
