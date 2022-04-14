@@ -5,12 +5,13 @@
 }
 :root {
   --handle-size: 3rem;
-  --img-gap: .25rem;
+  --img-gap: 0.25rem;
 }
 body {
   margin: 0;
-  background-color: #333;
+  background-color: #0f171e;
   color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .container {
   display: flex;
@@ -38,7 +39,7 @@ body {
   border-radius: 1rem;
   flex-grow: 0;
   flex-shrink: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   z-index: 10;
   width: var(--handle-size);
   margin: var(--img-gap) 0;
@@ -63,7 +64,7 @@ body {
 }
 .handle:hover,
 .handle:focus {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .text {
   transform: transform 150ms ease-in-out;
@@ -72,34 +73,36 @@ body {
 .handle:focus .text {
   transform: scale(1.2);
 }
-.row {
-
-}
 .header {
   display: flex;
   justify-content: space-between;
-  padding: .5rem calc(var(--img-gap) * 2 + var(--handle-size));
+  padding: 0.5rem calc(var(--img-gap) * 2 + var(--handle-size));
+  align-items: center;
 }
 .title {
-font-size:  2rem;
-margin: 0;
+  font-size: 1.25rem;
+  margin: 0;
 }
 .progress-bar {
   display: flex;
-  gap: .5rem;
+  gap: 0.25rem;
 }
 .progress-item {
-  flex: 0 0 2rem;
-  min-width: 2rem;
-  height: .5rem;
-  background-color: rgba(255, 255, 255, .5);
+  flex: 0 0 1.5rrem;
+  min-width: 1.5rem;
+  height: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .progress-item.active {
-  background-color: rgba(255, 255, 255, .9);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 @media (max-width: 1000px) {
   .slider {
     --items-per-screen: 3;
   }
 }
-
+@media (max-width: 500px) {
+  .slider {
+    --items-per-screen: 2;
+  }
+}
