@@ -13,6 +13,12 @@ body {
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.banner {
+  padding: 3rem 0;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
 .container {
   display: flex;
   justify-content: center;
